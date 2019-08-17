@@ -1,15 +1,31 @@
-import React from "react";
-import { Tab, Menu, Icon } from "semantic-ui-react";
+import React from 'react';
+import { Tab } from 'semantic-ui-react';
 import { NavLink } from "react-router-dom";
 
-// TODO: Add missing tabs below
-export default function TabNav() {
-  return (
-    <div className="nav">
-      <h3>Home Page</h3>
-      <h3>Characters</h3>
-      <h3>Locations</h3>
-      <h3>Episodes</h3>
-    </div>
-  )
-};
+
+const panes = [
+  { menuItem: 'Home Page',
+    render: () => {
+      <Tab.Pane>Tab 1 Content</Tab.Pane>
+    }
+  },
+  { menuItem: 'Characters',
+    render: () => {
+      <Tab.Pane>Tab 2 Content</Tab.Pane>
+    }
+  },
+  { menuItem: 'Locations',
+    render: () => {
+      <Tab.Pane>Tab 3 Content</Tab.Pane>
+    }
+  },
+  { menuItem: 'Episodes',
+    render: () => {
+      <Tab.Pane>Tab 3 Content</Tab.Pane>
+    }
+  },
+]
+
+const TabExampleBasic = () => <Tab panes={panes} />
+
+export default TabExampleBasic
