@@ -25,7 +25,7 @@ const panes = [
   { menuItem: 'Episodes',
     render: () => {
       return (
-        <Tab.Pane>Tab 3 Content</Tab.Pane>
+        <Tab.Pane>Tab 4 Content</Tab.Pane>
       )}
   },
 ]
