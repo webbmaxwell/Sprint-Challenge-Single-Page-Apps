@@ -26,13 +26,13 @@ In this challenge, you will create a Single Page Application complete with Clien
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question.
 
 - [ ] Explain benefit(s) using `client-side routing`?
-> Answer:
+  It is useful for single-page-applications because it can run in the browser
 - [ ] What does AJAX stand for?
-> Answer:
+  Asynchronous JavaScript and XML
 - [ ] What are `controlled components` in React?
-> Answer:
+  It is an input element that is controlled by the state
 - [ ] Name three tools/libraries for making AJAX requests.
-> Answer:
+  Fetch, API, jQuery
 
 ## Project Set Up
 
@@ -173,4 +173,3 @@ Start with the most _familiar sounding_ stretch goal. Then _most fun_. After tha
 > **Note:** AFTER Sprint Challenge: [Solutions to many stretch goals](https://github.com/LambdaSchool/Sprint-Challenge-Single-Page-Apps-Solution/pulls) (and live demo URLs) are available from TLs (or GitHub admins.)
 
 There are many ways to implement each of these requirements!
-
