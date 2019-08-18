@@ -1,6 +1,6 @@
 import React from 'react';
 import { Tab } from 'semantic-ui-react';
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 
 
 const panes = [
