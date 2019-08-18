@@ -108,7 +108,7 @@ Create 3 page components to display data from 3 API endpoints:
 
 Add a Router to this application using [React Router](https://reacttraining.com/react-router/web/guides/quick-start).
 
-> **Tip:** Review the [examples on the React Router site.](https://reacttraining.com/react-router/web/guides/quick-start)
+**Tip:** Review the [examples on the React Router site.](https://reacttraining.com/react-router/web/guides/quick-start)
 
 - [ ] Start by wrapping your `root` component in the `BrowserRouter` component.
 - [ ] Declare your routes with `<Route>` components (for each component created above.)
