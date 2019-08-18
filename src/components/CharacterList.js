@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
 
+import CharacterCard from './CharacterCard.js';
+
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
   const [characters, setCharacters] = useState([]);
@@ -8,6 +10,7 @@ export default function CharacterList() {
   useEffect(() => {
     axios.get('https://rickandmortyapi.com/api/character/')
       .then((res) => {
+        console.log(res)
         setCharacters(res.data.results)
       })
       .catch((error) => {
@@ -19,7 +22,13 @@ export default function CharacterList() {
 
   return (
     <section className="character-list grid-view">
-      <h2>TODO: `array.map()` over your state here!</h2>
+    {characters.map(char => (
+      <CharacterCard key={char.id} img={char.image} name={char.name} species={char.species} status={char.status} location={char.location} origin={char.origin}/>
+    ))}
     </section>
   );
 }
+//
+// {characters.map(char => {
+//   <CharacterCard />
+// })}

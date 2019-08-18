@@ -1,16 +1,17 @@
 import React from "react";
-import { Card, Icon, Image } from 'semantic-ut-react';
+import { Card, Icon, Image } from 'semantic-ui-react';
 
-import CharacterList from './CharacterList.js';
+const CharacterCard = (props) => {
 
-export default function CharacterCard() {
   return (
     <Card>
-      <Image src={`${props.src}`}/>
+      <Image src={`${props.src}`} wrapped ui={false}/>
       <Card.Content>
-        <Card.Header></Card.Header>
-        <Card.Meta></Card.Meta>
-        <Card.Description></Card.Description>
+        <Card.Header content={`${props.name}`} />
+        <Card.Meta content={`${props.species}`} />
+        <Card.Meta content={`${props.status}`} />
+        <Card.Description content={`${props.location}`} />
+        <Card.Description content={`${props.origin}`} />
       </Card.Content>
       <Card.Content extra>
         <a>
@@ -21,3 +22,7 @@ export default function CharacterCard() {
     </Card>
   )
 }
+
+export default CharacterCard
+
+// { src, name, species, status, location, origin }
