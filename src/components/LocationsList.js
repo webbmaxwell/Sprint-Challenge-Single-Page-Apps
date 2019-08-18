@@ -10,7 +10,6 @@ export default function LocationsList() {
   useEffect(() => {
     axios.get('https://rickandmortyapi.com/api/location')
       .then(res => {
-        console.log(res)
         setPlanets(res.data.results)
       })
       .catch(error => {
