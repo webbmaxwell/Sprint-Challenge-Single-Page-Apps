@@ -6,7 +6,8 @@ const EpisodeCard = (props) => {
     <Card>
       <Card.Content>
         <Card.Header content={`${props.name}`}/>
-        <Card.Meta content={`${props.date}`}
+        <Card.Meta content={`${props.episode}`}
+        <Card.Meta content={`${props.date}`} />
       </Card.Content>
     </Card>
   )

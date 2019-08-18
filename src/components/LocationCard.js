@@ -1,13 +1,13 @@
 import React from "react";
 import { Card } from 'semantic-ui-react';
 
-const LocationCard = ({ name, type, dimension, residents }) => {
+const LocationCard = (props) => {
   return (
     <Card>
       <Card.Content>
-        <Card.Header content={`${name}`}/>
-        <Card.Meta content={`${type} - ${dimension}`}/>
-        <Card.Meta content={`Residents ${residents}`} />
+        <Card.Header content={`${props.name}`}/>
+        <Card.Meta content={`${props.type} - ${props.dimension}`}/>
+        <Card.Meta content={`Residents ${props.residents}`} />
       </Card.Content>
     </Card>
   )

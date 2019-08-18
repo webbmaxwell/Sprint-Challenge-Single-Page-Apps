@@ -2,6 +2,7 @@ import React from 'react';
 import { Tab } from 'semantic-ui-react';
 // import { NavLink } from "react-router-dom";
 
+import HomePage from './HomePage.js';
 import CharacterList from './CharacterList.js';
 import LocationsList from './LocationsList.js';
 import EpisodeList from './EpisodeList.js';
@@ -10,7 +11,7 @@ const panes = [
   { menuItem: 'Home Page',
     render: () => {
       return (
-        <Tab.Pane>Tab 1 Content</Tab.Pane>
+        <Tab.Pane>{<HomePage />}</Tab.Pane>
       )}
   },
   { menuItem: 'Characters',

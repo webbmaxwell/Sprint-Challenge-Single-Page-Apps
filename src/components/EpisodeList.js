@@ -10,7 +10,7 @@ export default function EpisodeList() {
   useEffect(() => {
     axios.get('https://rickandmortyapi.com/api/episode')
       .then(res => {
-        console.log(res)
+        console.log(res.data)
         setEpisodes(res.data.results)
       })
       .catch(error => {
@@ -21,7 +21,7 @@ export default function EpisodeList() {
   return (
     <section className="episode-list grid-view">
       {episodes.map(epi => (
-        <EpisodeCard key={epi.id} name={epi.name} air_date={epi.date}/>
+        <EpisodeCard key={epi.id} name={epi.name} date={epi.air_date} episode={epi.episode}/>
       ))}
     </section>
   )

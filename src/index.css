@@ -37,3 +37,13 @@ main {
 header h1 {
   text-align: center;
 }
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-img {
+  border-radius: 11rem;
+}

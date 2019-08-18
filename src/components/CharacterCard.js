@@ -14,7 +14,7 @@ const CharacterCard = (props) => {
         <Card.Description content={`${props.origin}`} />
       </Card.Content>
       <Card.Content extra>
-        <a>
+        <a href="localhost:3000">
         <Icon name='user' />
         Episodes
         </a>
