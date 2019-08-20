@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import { Card, Icon, Image } from 'semantic-ui-react';
 
 const CharacterCard = (props) => {
@@ -14,10 +15,10 @@ const CharacterCard = (props) => {
         <Card.Description content={`${props.origin}`} />
       </Card.Content>
       <Card.Content extra>
-        <a href="localhost:3000">
-        <Icon name='user' />
-        Episodes
-        </a>
+        <Link to="/">
+          <Icon name='user' />
+          Episodes
+        </Link>
       </Card.Content>
     </Card>
   )

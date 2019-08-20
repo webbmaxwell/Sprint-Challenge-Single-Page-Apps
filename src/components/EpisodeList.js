@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
 
-import EpisodeCard from './LocationCard.js';
+import EpisodeCard from './EpisodeCard.js';
 
 export default function EpisodeList() {
 
@@ -21,7 +21,7 @@ export default function EpisodeList() {
   return (
     <section className="episode-list grid-view">
       {episodes.map(epi => (
-        <EpisodeCard key={epi.id} name={epi.name} date={epi.air_date} episode={epi.episode}/>
+        <EpisodeCard key={epi.id} name={epi.name} date={epi.air_date} episode={epi.episode} />
       ))}
     </section>
   )
