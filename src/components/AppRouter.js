@@ -10,10 +10,10 @@ import EpisodeList from './EpisodeList.js';
 function AppRouter() {
   return (
     <div className="">
-    <Route exact path="/" component={HomePage} />
-    <Route path="/character" component={CharacterList} />
-    <Route path="/location" component={LocationsList} />
-    <Route path="/episode" component={EpisodeList} />
+    <Route exact path="/" render={props => <HomePage />} />
+    <Route path="/characters" component={props => <CharacterList {...props}/>} />
+    <Route path="/locations" component={props => <LocationsList {...props} />} />
+    <Route path="/episodes" component={props => <EpisodeList {...props} />} />
     </div>
   )
 }
