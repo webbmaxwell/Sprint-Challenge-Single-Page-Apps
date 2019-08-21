@@ -11,9 +11,18 @@ function AppRouter() {
   return (
     <div className="">
     <Route exact path="/" render={props => <HomePage />} />
-    <Route path="/characters" component={props => <CharacterList {...props}/>} />
-    <Route path="/locations" component={props => <LocationsList {...props} />} />
-    <Route path="/episodes" component={props => <EpisodeList {...props} />} />
+    <Route
+      path="/characters"
+      render={props => <CharacterList {...props}/>}
+    />
+    <Route
+      path="/locations"
+      render={props => <LocationsList {...props} />}
+    />
+    <Route
+      path="/episodes"
+      render={props => <EpisodeList {...props} />}
+    />
     </div>
   )
 }
