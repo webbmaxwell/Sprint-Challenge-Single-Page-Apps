@@ -37,3 +37,19 @@ main {
 header h1 {
   text-align: center;
 }
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-img {
+  border-radius: 11rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  padding: .5rem 0;
+}
